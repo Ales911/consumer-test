@@ -9,7 +9,7 @@ public class ConsumerIntTest {
 
     final Random rn = new Random();
     private final Consumer consumer = new Consumer();
-
+    
     // TODO: maybe it should runs depending on profile
     @Test
     void consumerTest() throws InterruptedException {
@@ -50,7 +50,7 @@ public class ConsumerIntTest {
         
         // TODO: add an assertion that there wasn't any exception
     }
-
+    
     // for profiler.
     public static void main(String[] args) throws InterruptedException {
         new ConsumerIntTest().consumerTest();
