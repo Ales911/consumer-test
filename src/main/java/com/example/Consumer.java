@@ -41,6 +41,14 @@ class Consumer {
                 System.out.println(ex.getMessage());
             }
         });
+        
+        // clean deque at the end
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                data.clear();
+            }
+        });
     }
 
     /**
